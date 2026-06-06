@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # RCM — Reporteador de Control y Monitoreo
 
 Sistema web para detección temprana de estudiantes en riesgo académico.
@@ -109,3 +110,7 @@ RCM/
 | 🔴 Rojo | Promedio < 60% |
 
 Los umbrales son configurables desde la pantalla de Configuración.
+=======
+# RCM
+Reporteador en tiempo real para ayudar a escuela
+>>>>>>> 25f863f5a5a9995311b98bea0a5f7235f53a3b7b
