@@ -393,9 +393,31 @@ El sistema acepta archivos `.xlsx`, `.xls` y `.csv` con las siguientes columnas:
 Proyecto desarrollado para el **Tecnológico Nacional de México (TECNM)**
 Materia: Desarrollo de Aplicaciones Web
 
-- **Gamboa Bernal Ivan Alexei**
+
+## 👥 Integrantes del Equipo RCM
+
+| No. | Nombre Completo                 |
+| --- | ------------------------------- |
+| 1   | **Gamboa Bernal Ivan Alexei**   |
+| 2   | Madrigal García Jade            |
+| 3   | Domínguez Domínguez Victor Hugo |
+| 4   | Balam López Jennifer Vanessa    |
+| 5   | Jorge Uriel Ortiz Antonio       |
+| 6   | Mariana Hernández               |
+| 7   | Gilbert Said Domínguez De La O  |
+| 8   | Hernandez Anastacio Yahir       |
+| 9   | Florentino Martinez Diego       |
+| 10  | Sarmiento-Ramírez Anthony       |
+| 11  | Alvarez Castro Logan Daniel     |
 
 ---
+
+### 📌 Equipo 2 - RCM
+
+**Sistema Inteligente de Monitoreo y Gestión Académica**
+
+Desarrollado como proyecto académico para la implementación de tecnologías web, análisis de datos y monitoreo inteligente de indicadores académicos.
+  
 
 ## 📝 Licencia
 
