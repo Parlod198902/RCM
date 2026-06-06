@@ -330,7 +330,7 @@ npm run dev
 ### Abre el navegador en:
 
 ```
-http://localhost:5173](https://rcm-weld.vercel.app/login
+https://rcm-weld.vercel.app/login
 ```
 
 ---
