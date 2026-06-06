@@ -1,0 +1,18 @@
+<template>
+  <RouterView />
+</template>
+
+<script setup lang="ts">
+import { onMounted } from 'vue'
+import { RouterView } from 'vue-router'
+import { useAuthStore } from '@/stores/auth'
+import { connectSocket } from '@/services/socket'
+
+const auth = useAuthStore()
+
+onMounted(() => {
+  if (auth.isAuthenticated) {
+    connectSocket()
+  }
+})
+</script>

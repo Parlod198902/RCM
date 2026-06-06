@@ -1,0 +1,8 @@
+cd c:\Users\ivana\Downloads\proyec\Python\RCM\backend
+.\venv\Scripts\Activate.ps1
+python run.py
+
+
+
+cd c:\Users\ivana\Downloads\proyec\Python\RCM\frontend
+npm run dev
