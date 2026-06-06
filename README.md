@@ -1,4 +1,4 @@
-# 🎓 RCM — Reporteador de Control y Monitoreo Académico
+# 🎓 RCM — Reporteador de Control y Monitoreo 
 
 <div align="center">
 
