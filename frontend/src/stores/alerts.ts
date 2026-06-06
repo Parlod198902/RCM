@@ -1,17 +1,7 @@
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 import { alertsApi } from '@/api/alerts'
-
-export interface Alert {
-  id: number
-  estudiante_id: number
-  estudiante_nombre: string
-  tipo_alerta: 'estudiante' | 'docente'
-  mensaje: string
-  fecha_envio: string
-  estado: 'activa' | 'resuelta' | 'ignorada'
-  maestro_id: number
-}
+import type { Alert } from '@/types'
 
 export const useAlertsStore = defineStore('alerts', () => {
   const alerts = ref<Alert[]>([])

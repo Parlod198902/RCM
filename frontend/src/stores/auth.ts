@@ -1,15 +1,8 @@
 import { defineStore } from 'pinia'
 import { ref, computed } from 'vue'
 import { authApi } from '@/api/auth'
+import type { User } from '@/types'
 import router from '@/router'
-
-interface User {
-  id: number
-  nombre: string
-  correo: string
-  rol: string
-  fecha_creacion: string
-}
 
 export const useAuthStore = defineStore('auth', () => {
   const token = ref<string | null>(localStorage.getItem('rcm_token'))

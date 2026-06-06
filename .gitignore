@@ -1,0 +1,34 @@
+# ── Entornos virtuales Python ─────────────────────────────────────
+backend/venv/
+backend/__pycache__/
+backend/**/__pycache__/
+backend/**/*.pyc
+backend/uploads/
+
+# ── Variables de entorno (NUNCA subir) ────────────────────────────
+.env
+backend/.env
+frontend/.env
+frontend/.env.production
+frontend/.env.local
+
+# ── Node / Frontend ────────────────────────────────────────────────
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# ── Build artifacts ────────────────────────────────────────────────
+dist/
+*.egg-info/
+.pytest_cache/
+.vscode/
+
+# ── OS ─────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Archivos subidos por usuarios ─────────────────────────────────
+uploads/
+exports/

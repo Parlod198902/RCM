@@ -1,19 +1,7 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
 import { studentsApi } from '@/api/students'
-
-export interface Student {
-  id: number
-  matricula: string
-  nombre: string
-  carrera: string
-  grupo: string
-  participacion: number
-  rendimiento: number
-  nivel_riesgo: 'verde' | 'amarillo' | 'rojo'
-  docente_id: number | null
-  fecha_actualizacion: string
-}
+import type { Student } from '@/types'
 
 export const useStudentsStore = defineStore('students', () => {
   const students = ref<Student[]>([])

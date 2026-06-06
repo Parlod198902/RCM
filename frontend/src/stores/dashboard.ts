@@ -1,25 +1,13 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
 import { dashboardApi } from '@/api/dashboard'
-
-interface Stats {
-  total: number
-  verde: number
-  amarillo: number
-  rojo: number
-  alertas_sin_leer: number
-}
-
-interface CarreraData {
-  carrera: string
-  verde: number
-  amarillo: number
-  rojo: number
-}
+import type { DashboardStats, GrupoStat } from '@/types'
 
 export const useDashboardStore = defineStore('dashboard', () => {
-  const stats = ref<Stats>({ total: 0, verde: 0, amarillo: 0, rojo: 0, alertas_sin_leer: 0 })
-  const chartData = ref<CarreraData[]>([])
+  const stats = ref<DashboardStats>({
+    total: 0, verde: 0, amarillo: 0, rojo: 0, alertas_sin_leer: 0
+  })
+  const chartData = ref<GrupoStat[]>([])
   const loading = ref(false)
 
   async function fetchStats() {
