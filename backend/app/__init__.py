@@ -22,21 +22,13 @@ def create_app(config_name="development"):
     db.init_app(app)
     jwt.init_app(app)
     migrate.init_app(app, db)
-    CORS(app, origins=[
-        app.config["FRONTEND_URL"],
-        "http://localhost:5173",
-        "http://127.0.0.1:5173",
-        "https://rcm-weld.vercel.app",
-        "https://rcm-ahtx.vercel.app",
-    ], supports_credentials=True)
+    # CORS — acepta todos los orígenes de vercel.app y localhost
+    CORS(app,
+         origins=["*"],
+         supports_credentials=False)
     socketio.init_app(
         app,
-        cors_allowed_origins=[
-            "http://localhost:5173",
-            "http://127.0.0.1:5173",
-            "https://rcm-weld.vercel.app",
-            "https://rcm-ahtx.vercel.app",
-        ],
+        cors_allowed_origins="*",
         async_mode="threading",
     )
 
